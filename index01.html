@@ -20,68 +20,38 @@
     <!-- navbar section start -->
     <header class="lg:mx-20 mt-4">
         <nav>
-          <div class="navbar bg-base-100 px-4 md:px-6">
-            <!-- Navbar Start -->
-            <div class="navbar-start">
-              <!-- Dropdown Menu for Mobile -->
-              <div class="dropdown">
-                <button
-                  tabindex="0"
-                  aria-label="Toggle menu"
-                  class="btn btn-ghost lg:hidden"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
-                </button>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#destination">Destination</a></li>
-                  <li><a href="#search">Search</a></li>
-                </ul>
-              </div>
-              <!-- Brand Name -->
-              <a
-                href="#"
-                class="btn btn-ghost md:text-2xl text-xl lg:text-4xl font-bold text-primary"
-              >
-                E-Tickets
-              </a>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a href="#" class="text-base sm:text-lg md:text-xl lg:text-2xl">Home</a></li>
+                            <li><a href="#about" class="text-base sm:text-lg md:text-xl lg:text-2xl">About</a></li>
+                            <li><a href="#destination" class="text-base sm:text-lg md:text-xl lg:text-2xl">Destination</a></li>
+                            <li><a href="#search" class="text-base sm:text-lg md:text-xl lg:text-2xl">Search</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-ghost text-xl sm:text-2xl lg:text-4xl font-bold text-primary">E-Tickets</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="#" class="text-base sm:text-lg md:text-xl lg:text-xl">Home</a></li>
+                        <li><a href="#about" class="text-base sm:text-lg md:text-xl lg:text-xl">About</a></li>
+                        <li><a href="#destination" class="text-base sm:text-lg md:text-xl lg:text-xl">Destination</a></li>
+                        <li><a href="#search" class="text-base sm:text-lg md:text-xl lg:text-xl">Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="flex justify-center bg-green-100 py-2 px-3 rounded-md border-[1px] border-green-400">
+                        <p class="text-sm sm:text-base font-medium mr-2 text-green-500">Bus</p>
+                        <img src="images/bus-icon.png" alt="Bus Icon" class="h-6 w-6" />
+                    </div>
+                </div>
             </div>
-      
-            <!-- Navbar Center (For Desktop) -->
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 text-base font-medium">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#destination">Destination</a></li>
-                <li><a href="#search">Search</a></li>
-              </ul>
-            </div>
-      
-            <!-- Navbar End -->
-            <div
-              class="navbar-end flex items-center bg-green-200 w-24 h-10 px-4 py-2 rounded-lg"
-            >
-              <p class="text-sm font-medium mr-2">Bus</p>
-              <img src="images/bus-icon.png" alt="Bus Icon" class="h-6 w-6" />
-            </div>
-          </div>
         </nav>
       </header>
       
@@ -90,46 +60,61 @@
     
     <!-- banner section start  -->
     <section class="lg:mx-20 m-4">
-      <div
-        class="hero min-h-screen rounded-lg relative"
-        style="background-image: url(images/banner.png)"
-      >
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-center text-neutral-content">
-          <div class="max-w">
-            <h1 class="mb-5 text-5xl font-bold">End to- End Travel with</h1>
-            <h1 class="mb-5 text-[#1DD100] text-5xl font-bold">
-              Borakh Paribahan
-            </h1>
-            <p class="text-sm mb-2">
-              yes, you can run unit tests and view the result directly within
-              the app.The <br />integrated testing features allow for a
-              streaming
-            </p>
-            <button onclick="scrollToSection()" class="p-2 font-bold bg-[#1DD100] rounded-lg text-2xl">Buy Tickets</button>
+        <div
+          class="hero min-h-screen rounded-lg relative"
+          style="background-image: url(images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-xl mx-auto">
+              <h1 class="mb-3 text-3xl sm:text-3xl md:text-5xl font-bold">End to-End Travel with</h1>
+              <h1 class="mb-3 text-[#1DD100] text-3xl sm:text-4xl md:text-5xl font-bold">
+                Borakh Paribahan
+              </h1>
+              <p class="text-sm sm:text-base mb-2">
+                Yes, you can run unit tests and view the result directly within
+                the app. The <br />integrated testing features allow for a
+                streaming experience.
+              </p>
+              <button onclick="scrollToSection()" class="p-2 font-bold bg-[#1DD100] rounded-lg text-2xl">
+                Buy Tickets
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- user section  -->
-      <div class=" grid grid-cols-1 gap-x-2 lg:flex lg:mx-20 lg:justify-between lg:absolute lg:-bottom-36 lg:left-30">
-      <div class="flex gap-2 py-4 px-8 rounded-lg border-[#47d170] border-b-2 bg-[#FFFFFF] lg:ml-20">
-      <img src="images/people.png" alt="">
-      <div><h1 class="font-bold text-2xl">500k+</h1>
-        <p class="text-sm">Register user</p></div>
+      
+        <!-- User section -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:max-w-4xl lg:-translate-y-1/2 justify-items-center">
+          <!-- Registered Users Section -->
+          <div class="flex gap-4 py-4 px-8 rounded-xl border-[#47d170] border-b-2 bg-[#FFFFFF]">
+              <img src="images/people.png" alt="People Icon" class="h-12 w-12"/>
+              <div>
+                  <h1 class="font-bold text-2xl">500k+</h1>
+                  <p class="text-sm">Registered Users</p>
+              </div>
+          </div>
+      
+          <!-- Tickets Sold Section -->
+          <div class="flex gap-4 py-4 px-8 rounded-xl border-[#47d170] border-b-2 bg-[#FFFFFF]">
+              <img src="images/ticket-cupon.png" alt="Ticket Coupon Icon" class="h-12 w-12"/>
+              <div>
+                  <h1 class="font-bold text-2xl">1.5M+</h1>
+                  <p class="text-sm">Tickets Sold</p>
+              </div>
+          </div>
+      
+          <!-- Rental Partners Section -->
+          <div class="flex gap-4 py-4 px-8 rounded-xl border-[#47d170] border-b-2 bg-[#FFFFFF]">
+              <img src="images/stoppage.png" alt="Stoppage Icon" class="h-12 w-12"/>
+              <div>
+                  <h1 class="font-bold text-2xl">80k+</h1>
+                  <p class="text-sm">Rental Partners</p>
+              </div>
+          </div>
       </div>
       
-      <div class="flex gap-2 py-4 px-8 rounded-lg border-[#47d170] border-b-2 bg-[#FFFFFF] lg:ml-8">
-      <img src="images/ticket-cupon.png" alt="">
-      <div><h1 class="font-bold text-2xl">1.k lacks</h1>
-        <p class="text-sm">Tickets sold</p></div>
-      </div>
-      <div class="flex gap-2 py-4 px-8 rounded-lg border-[#47d170] border-b-2 bg-[#FFFFFF] lg:ml-8">
-        <img src="images/stoppage.png" alt="">
-        <div><h1 class="font-bold text-2xl">80k+</h1>
-          <p class="text-sm">Rentals partners</p></div>
-        </div>
-      </div>
-    </section>
+      
+      </section>
     <!-- end banner section  -->
     <!-- best offer for you start  -->
     <section class="lg:mx-20 lg:mt-20">
@@ -354,9 +339,9 @@
         </div>
         <div>
         <div> <button
-          class="bg-[#1DD100] px-3 py-1 rounded-md text-white w-full my-3"
+          class="bg-[#1DD100] px-3 py-1 rounded-md text-white w-full my-3 text-xl"
           onclick="my_modal_4.showModal()" id="myButton" disabled>
-         next
+         Next
         </button>
         <dialog id="my_modal_4" class="modal">
           <div class="modal-box w-2/3 h-4/5 max-w-5xl bg-gray-200">

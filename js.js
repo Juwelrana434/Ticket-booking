@@ -1,7 +1,7 @@
 // button counters 
 const allBtn = document.getElementsByClassName("btn");
 let count = 0;
-let counts = 8;
+let counts = 12;
 let total = 0;
 for (const btn of allBtn) {
   btn.addEventListener("click", function (e) {

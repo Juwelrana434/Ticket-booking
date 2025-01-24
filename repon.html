@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Seating Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="max-w-5xl w-full p-4 bg-white shadow-lg rounded-lg">
+    <h1 class="text-2xl font-bold text-center mb-6">Seating Layout</h1>
+    <div class="grid grid-cols-5 gap-4 items-center sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10" id="seat">
+      <!-- Row A -->
+      <div class="col-span-1 font-semibold text-center">A</div>
+      <button class="btn" id="btna" aria-label="Seat A1">A1</button>
+      <button class="btn" id="btnb" aria-label="Seat A2">A2</button>
+      <button class="btn" id="btnc" aria-label="Seat A3">A3</button>
+      <button class="btn" id="btnd" aria-label="Seat A4">A4</button>
+
+      <!-- Row B -->
+      <div class="col-span-1 font-semibold text-center">B</div>
+      <button class="btn" id="btne" aria-label="Seat B1">B1</button>
+      <button class="btn" id="btnf" aria-label="Seat B2">B2</button>
+      <button class="btn" id="btng" aria-label="Seat B3">B3</button>
+      <button class="btn" id="btnh" aria-label="Seat B4">B4</button>
+
+      <!-- Row C -->
+      <div class="col-span-1 font-semibold text-center">C</div>
+      <button class="btn" id="btni" aria-label="Seat C1">C1</button>
+      <button class="btn" id="btnj" aria-label="Seat C2">C2</button>
+      <button class="btn" id="btnk" aria-label="Seat C3">C3</button>
+      <button class="btn" id="btnl" aria-label="Seat C4">C4</button>
+
+      <!-- Row D -->
+      <div class="col-span-1 font-semibold text-center">D</div>
+      <button class="btn" id="btnm" aria-label="Seat D1">D1</button>
+      <button class="btn" id="btnn" aria-label="Seat D2">D2</button>
+      <button class="btn" id="btno" aria-label="Seat D3">D3</button>
+      <button class="btn" id="btnp" aria-label="Seat D4">D4</button>
+
+      <!-- Row E -->
+      <div class="col-span-1 font-semibold text-center">E</div>
+      <button class="btn" id="btnq" aria-label="Seat E1">E1</button>
+      <button class="btn" id="btnr" aria-label="Seat E2">E2</button>
+      <button class="btn" id="btns" aria-label="Seat E3">E3</button>
+      <button class="btn" id="btnt" aria-label="Seat E4">E4</button>
+
+      <!-- Row F -->
+      <div class="col-span-1 font-semibold text-center">F</div>
+      <button class="btn" id="btnu" aria-label="Seat F1">F1</button>
+      <button class="btn" id="btnv" aria-label="Seat F2">F2</button>
+      <button class="btn" id="btnw" aria-label="Seat F3">F3</button>
+      <button class="btn" id="btnx" aria-label="Seat F4">F4</button>
+    </div>
+  </div>
+
+  <style>
+    /* Tailwind CSS styles for buttons */
+    .btn {
+      @apply bg-blue-500 text-white py-2 px-4 rounded-md shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-transform transform hover:scale-105;
+    }
+    .btn:active {
+      @apply scale-95;
+    }
+  </style>
+</body>
+</html>

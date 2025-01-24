@@ -47,3 +47,39 @@ buttonh.addEventListener("click", function() {
     buttonh.disabled = true;
     
 });
+let buttoni = document.getElementById("btni");
+buttoni.addEventListener("click", function() {
+    buttoni.style.backgroundColor = "green";
+    buttoni.disabled = true;
+    
+});
+let buttonj = document.getElementById("btnj");
+var isDisabled = false; // Custom variable to track state
+
+buttonj.addEventListener("click", function () {
+    if (isDisabled) {
+        // Enable the button and change color to blue
+        buttonj.style.backgroundColor = "blue";
+        isDisabled = false;
+    } else {
+        // Disable the button and change color to green
+        buttonj.style.backgroundColor = "green";
+        isDisabled = true;
+    }
+});
+
+let buttonk = document.getElementById("btnk");
+var isDisabled = false; 
+// Custom variable to track state
+
+buttonk.addEventListener("click", function () {
+    if (isDisabled) {
+        // Enable the button and change color to blue
+        buttonk.style.backgroundColor = "blue";
+        isDisabled = false;
+    } else {
+        // Disable the button and change color to green
+        buttonk.style.backgroundColor = "green";
+        isDisabled = true;
+    }
+});
